@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Fond clair */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #6A4AD5;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+section {
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+section h2 {
+    color: #6A4AD5;
+    border-bottom: 2px solid #6A4AD5;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+ul, ol {
+    margin-top: 25px;
+    padding-left: 25px;
+}
+
+.job, .step {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.job:hover, .step:hover {
+    background-color: #f9f9f9;
+}
+
+.testimonial {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+}
+
+details {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+details:hover {
+    color: #6A4AD5;
+}
+
+footer {
+    background-color: #6A4AD5;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 60px;
+    font-size: 0.95rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* FAQ styles */
+#faq dl {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#faq dt {
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#faq dd {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #6A4AD5;
+    color: transparent;
+    transition: color 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, color 0.3s ease;
+}
+
+#faq dt:hover {
+    color: #6A4AD5;
+}
+
+#faq dt.active {
+    color: #6A4AD5;
+}
+
+#faq dt.active + dd {
+    max-height: 200px; /* or whatever height you want */
+    color: #333;
+}
+
+/* ... (les styles précédents) ... */
+
+/* Témoignages styles */
+#temoignages dl {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#temoignages details {
+    margin-top: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#temoignages details[open] {
+    color: #6A4AD5;
+}
+
+#temoignages blockquote {
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 3px solid #6A4AD5;
+    color: transparent;
+    transition: color 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, color 0.3s ease;
+}
+
+#temoignages details[open] blockquote {
+    max-height: 200px; /* or whatever height you want */
+    color: #333;
+}
+
+#temoignages details summary::marker {
+    display: none;
+}
+
+#temoignages details summary {
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    background-color: #6A4AD5;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+section {
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #6A4AD5;
+    border-bottom: 2px solid #6A4AD5;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+ul, ol {
+    margin-top: 25px;
+    padding-left: 25px;
+}
+
+.job, .step {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.job:hover, .step:hover {
+    background-color: #f9f9f9;
+}
+
+.testimonial {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+}
+
+details {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+details:hover {
+    color: #6A4AD5;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    background-color: #6A4AD5;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 60px;
+    font-size: 0.95rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Couleur de fond légèrement grise */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    background-color: #6A4AD5;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+section {
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #6A4AD5;
+    border-bottom: 2px solid #6A4AD5;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+ul, ol {
+    margin-top: 25px;
+    padding-left: 25px;
+}
+
+.job, .step {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #f9f9f9; /* Couleur de fond des éléments survolés */
+}
+
+.job:hover, .step:hover {
+    background-color: #e6e6e6; /* Couleur de fond plus foncée pour le survol */
+}
+
+.testimonial {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+}
+
+details {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+details:hover {
+    color: #6A4AD5;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    background-color: #6A4AD5;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 60px;
+    font-size: 0.95rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    background-color: #7454DF;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom-left-radius: 50px; /* Arrondi en bas à gauche */
+    border-bottom-right-radius: 50px; /* Arrondi en bas à droite */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre pour le texte */
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+nav {
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Fond blanc pour la barre de navigation */
+}
+
+nav a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #7454DF;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition pour la couleur de fond et la couleur du texte */
+}
+
+nav a:hover {
+    background-color: #7454DF;
+    color: #fff;
+    border-radius: 15px; /* Arrondi au survol */
+}
+
+section {
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px; /* Arrondi pour les sections */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+section h2 {
+    color: #7454DF;
+    border-bottom: 2px solid #7454DF;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Ombre pour le titre */
+}
+
+ul, ol {
+    margin-top: 25px;
+    padding-left: 25px;
+}
+
+.job, .step {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.job:hover, .step:hover {
+    background-color: #e6e6e6;
+}
+
+.testimonial {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+}
+
+details {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+details:hover {
+    color: #7454DF;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    background-color: #7454DF;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 60px;
+    font-size: 0.95rem;
+    border-top-left-radius: 50px; /* Arrondi en haut à gauche */
+    border-top-right-radius: 50px; /* Arrondi en haut à droite */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+footer p {
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Ombre pour le texte */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #7454DF, #7454DF);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+nav {
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #ffffff, #f4f4f4);
+}
+
+nav a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #7454DF;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #7454DF;
+    color: #fff;
+    border-radius: 15px;
+}
+
+section {
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+section h2 {
+    color: #7454DF;
+    border-bottom: 2px solid #7454DF;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+ul, ol {
+    margin-top: 25px;
+    padding-left: 25px;
+}
+
+.job, .step {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.job:hover, .step:hover {
+    background-color: #e6e6e6;
+}
+
+.testimonial {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+}
+
+details {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+details:hover {
+    color: #7454DF;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #7454DF, #7454DF);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 60px;
+    font-size: 0.95rem;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour le formulaire de candidature */
+section#candidature form {
+    margin-top: 40px;
+}
+
+section#candidature form div {
+    margin-bottom: 20px;
+}
+
+section#candidature form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+section#candidature form input[type="text"],
+section#candidature form input[type="email"],
+section#candidature form input[type="tel"],
+section#candidature form select,
+section#candidature form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+section#candidature form button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section#candidature form button:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
